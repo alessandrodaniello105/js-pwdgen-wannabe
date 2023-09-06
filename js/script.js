@@ -1,18 +1,26 @@
 //1. + 2.
-const userName = prompt('Qual è il tuo nome?');
-const userNameRST = userName.trim();
+// const userName = prompt('Qual è il tuo nome?');
+// const userNameRST = userName.trim();
 
-const userLastName = prompt('Qual è il tuo cognome?');
-const userLastNameRST = userLastName.trim();
+// const userLastName = prompt('Qual è il tuo cognome?');
+// const userLastNameRST = userLastName.trim();
 
-const userFavColor = prompt('Infine qual è il tuo colore preferito?');
-const userFavColorRST = userFavColor.trim();
+// const userFavColor = prompt('Infine qual è il tuo colore preferito?');
+// const userFavColorRST = userFavColor.trim();
+
+//1.
+let userName, userLastName, userFavColor, pwdPre
+
+//2.
+userName = prompt('Qual è il tuo nome?');
+userLastName = prompt('Qual è il tuo cognome?');
+userFavColor = prompt('Infine qual è il tuo colore preferito?');
 
 //3.
 const magicNumber = 23;
 
 //4.
-const pwdPre = userNameRST + userLastNameRST + userFavColorRST + magicNumber;
+pwdPre = userNameRST + userLastNameRST + userFavColorRST + magicNumber;
 const pwdGenerated = pwdPre.toLowerCase();
 
 /*5.
