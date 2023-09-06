@@ -13,8 +13,14 @@ let userName, userLastName, userFavColor, pwdPre
 
 //2.
 userName = prompt('Qual è il tuo nome?');
+const userNameRST = userName.trim();
+
 userLastName = prompt('Qual è il tuo cognome?');
+const userLastNameRST = userLastName.trim();
+
 userFavColor = prompt('Infine qual è il tuo colore preferito?');
+const userFavColorRST = userFavColor.trim();
+
 
 //3.
 const magicNumber = 23;
@@ -23,7 +29,8 @@ const magicNumber = 23;
 pwdPre = userNameRST + userLastNameRST + userFavColorRST + magicNumber;
 const pwdGenerated = pwdPre.toLowerCase();
 
-/*5.
+/*
+//5.
 Stampo il messaggio selezionando l'h1 tramite l'id e gli assegno la mia variabile ottenuta
 */
 document.getElementById('pwdOutput').innerHTML = pwdGenerated;
