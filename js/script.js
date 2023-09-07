@@ -13,13 +13,13 @@ let userName, userLastName, userFavColor, pwdPre
 
 //2.
 userName = prompt('Qual è il tuo nome?');
-const userNameRST = userName.trim().replace(" ", "");
+const userNameRST = userName.trim().replace(/ /g, "");
 
 userLastName = prompt('Qual è il tuo cognome?');
-const userLastNameRST = userLastName.trim().replace(" ", "");
+const userLastNameRST = userLastName.trim().replace(/ /g, "");
 
 userFavColor = prompt('Infine qual è il tuo colore preferito?');
-const userFavColorRST = userFavColor.trim().replace(" ", "");
+const userFavColorRST = userFavColor.trim().replace(/ /g, "");
 
 
 //3.
