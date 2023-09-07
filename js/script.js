@@ -9,24 +9,21 @@
 // const userFavColorRST = userFavColor.trim();
 
 //1.
-let userName, userLastName, userFavColor, pwdPre
+const userName = prompt('Qual è il tuo nome?').trim().replaceAll(" ", "");
+const userLastName = prompt('Qual è il tuo cognome?').trim().replaceAll(" ", "");
+const userFavColor = prompt('Infine qual è il tuo colore preferito?').trim().replaceAll(" ", "");
 
 //2.
-userName = prompt('Qual è il tuo nome?');
-const userNameRST = userName.trim().replace(/ /g, "");
-
-userLastName = prompt('Qual è il tuo cognome?');
-const userLastNameRST = userLastName.trim().replace(/ /g, "");
-
-userFavColor = prompt('Infine qual è il tuo colore preferito?');
-const userFavColorRST = userFavColor.trim().replace(/ /g, "");
+// const userNameRST = userName;
+// const userLastNameRST = userLastName
+// const userFavColorRST = userFavColor
 
 
 //3.
 const magicNumber = 23;
+const pwdPre = userName + userLastName + userFavColor + magicNumber;
 
 //4.
-pwdPre = userNameRST + userLastNameRST + userFavColorRST + magicNumber;
 const pwdGenerated = pwdPre.toLowerCase();
 
 /*
